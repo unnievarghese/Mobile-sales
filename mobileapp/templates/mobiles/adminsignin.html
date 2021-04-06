@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{%extends 'mobiles/base.html'%}
+{% block body_block%}
+    <div class="row">
+        <div class="col"></div>
+            <div class="col-4">
+                <form method="post">
+                    {%csrf_token%}
+                    <div>
+                        <label style="margin-top:50px">Username</label>
+                        <input class="form-control" type="text" name="uname">
+                    </div>
+                    <div>
+                        <label style="margin-top:50px">password</label>
+                        <input class="form-control" type="text" name="pwd">
+                    </div>
+                        <input style="margin-top:50px" class="btn btn-primary" type="submit" value="Sign In">
+                </form>
+            </div>
+        <div class="col"></div>
+    </div>
+{% endblock%}
